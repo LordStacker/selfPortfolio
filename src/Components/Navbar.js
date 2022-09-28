@@ -13,7 +13,7 @@ export default function ButtonAppBar({ isOpenSidebar, onCloseSidebar }) {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-        <Drawer
+        {/* <Drawer
             open={isOpenSidebar}
             onClose={onCloseSidebar}
             PaperProps={{
@@ -21,8 +21,8 @@ export default function ButtonAppBar({ isOpenSidebar, onCloseSidebar }) {
             }}
           >
             <div className="ColorFirst">first</div>
-          </Drawer>
-          {/* <IconButton
+          </Drawer> */}
+          <IconButton
             size="large"
             edge="start"
             color="inherit"
@@ -30,7 +30,7 @@ export default function ButtonAppBar({ isOpenSidebar, onCloseSidebar }) {
             sx={{ mr: 2 }}
           >
             <MenuIcon />
-          </IconButton> */}
+          </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Construction!
           </Typography>
